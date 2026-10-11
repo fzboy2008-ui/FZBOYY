@@ -3,100 +3,195 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="theme-color" content="#10131d">
-  <meta name="description" content="FZ BOY — Discord bot developer, web builder and technology enthusiast.">
-  <title>FZ BOY — Developer & Creator</title>
+  <title>FZBOY — Owner & Developer</title>
+  <link rel="stylesheet" href="style.css">
+  <!-- Google Fonts: Editorial / Clean Serif & Monospace -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=DM+Mono:wght@400;500&family=Manrope:wght@400;500;600;700;800&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="style.css">
+  <link href="https://fonts.googleapis.com/css2?family=Fira+Code:wght@400;500&family=Instrument+Serif:ital@0;1&family=Plus+Jakarta+Sans:wght@300;400;500;600&display=swap" rel="stylesheet">
 </head>
 <body>
-  <canvas id="stars" aria-hidden="true"></canvas>
-  <div class="grain" aria-hidden="true"></div>
-  <header class="topbar">
-    <a class="brand" href="#home"><span class="brand-mark">✦</span> FZ<span>BOY</span></a>
-    <button class="menu-toggle" id="menuToggle" aria-label="Toggle navigation" aria-expanded="false">☰</button>
-    <nav id="nav">
-      <a href="#about">About</a><a href="#services">What I do</a><a href="#work">Projects</a><a href="#gallery">Photo</a><a href="#contact">Contact</a>
+
+  <!-- Twinkling Stars Background Canvas -->
+  <canvas id="stars"></canvas>
+
+  <!-- Navbar -->
+  <header class="navbar">
+    <div class="nav-brand">☆ fzboy</div>
+    <nav class="nav-links">
+      <a href="#about">About</a>
+      <a href="#bots">Bots</a>
+      <a href="#work">Work</a>
     </nav>
   </header>
 
-  <main>
-    <section class="hero section-wrap" id="home">
-      <div class="hero-copy">
-        <p class="eyebrow"><span class="pulse"></span> HELLO, WORLD</p>
-        <h1>I'm <span class="gold">FZ BOY.</span><br>I build <span id="role" class="role">Discord bots</span><span class="cursor">|</span></h1>
-        <p class="intro">A creator who turns ideas into useful bots, clean websites and digital experiences. Always learning, building and improving.</p>
-        <div class="hero-actions">
-          <a class="button button-primary" href="#work">Explore my work <span>↗</span></a>
-          <a class="button button-ghost" href="#contact">Say hello <span>→</span></a>
-        </div>
-        <div class="quick-facts"><span>✦ Discord Bot Developer</span><span>✦ Web Creator</span><span>✦ Always Building</span></div>
+  <main class="container">
+    
+    <!-- Hero Section -->
+    <section class="hero reveal">
+      <div class="avatar-wrapper">
+        <img src="img/avatar.png" alt="FZBOY Avatar" class="avatar-img shot" data-src="img/avatar.png" data-alt="FZBOY Profile">
       </div>
-      <div class="hero-art">
-        <div class="art-orbit orbit-one"></div><div class="art-orbit orbit-two"></div>
-        <div class="image-frame"><img src="img/profile.png" alt="FZ BOY profile artwork"></div>
-        <div class="floating-card card-top"><span class="card-dot"></span> ONLINE <small>building something new</small></div>
-        <div class="floating-card card-bottom"><span class="spark">✦</span><div><strong>FZ BOY</strong><small>Creator / Developer</small></div></div>
-      </div>
-      <a class="scroll-cue" href="#about"><span></span> SCROLL TO EXPLORE</a>
-    </section>
-
-    <section class="content-section section-wrap" id="about">
-      <div class="section-heading"><p class="eyebrow">01 / THE PERSON BEHIND THE SCREEN</p><h2>A little <span class="gold">about me.</span></h2></div>
-      <div class="about-grid">
-        <p class="about-lead">I like taking an idea and making it real — one bot, one feature, and one line of code at a time.</p>
-        <div class="terminal">
-          <div class="terminal-bar"><i></i><i></i><i></i><span>fzboy@profile ~</span></div>
-          <div class="terminal-body">
-            <p><b>$ whoami</b><br><span>FZ BOY</span></p>
-            <p><b>$ role</b><br><span>discord bot developer · web creator</span></p>
-            <p><b>$ interests</b><br><span>automation, communities, websites</span></p>
-            <p><b>$ status</b><br><span class="status">working on the next idea...</span></p>
-          </div>
+      
+      <p class="tagline">☆ owner &amp; developer</p>
+      
+      <div class="hero-content">
+        <span class="sub-headline">HELLO, WORLD</span>
+        <h1 class="main-title">
+          I'm <em>FZBOY</em>.<br>
+          <span id="role"></span><span class="cursor">|</span>
+        </h1>
+        <p class="hero-desc">
+          Coding master. Developer of Discord bots and web apps, with a soft spot for clean, handwritten HTML.
+        </p>
+        <div class="hero-buttons">
+          <a href="#bots" class="btn btn-primary">See my bots</a>
+          <a href="mailto:fzboy2008@gmail.com" class="btn btn-secondary">Say hi</a>
         </div>
       </div>
     </section>
 
-    <section class="content-section section-wrap" id="services">
-      <div class="section-heading"><p class="eyebrow">02 / THINGS I ENJOY BUILDING</p><h2>What I <span class="gold">do.</span></h2><p class="section-note">A few of the areas I spend my time exploring.</p></div>
-      <div class="service-grid">
-        <article class="service-card"><div class="service-icon">⌘</div><p class="card-index">01</p><h3>Discord Bots</h3><p>Custom commands, helpful automation, community tools and smooth server experiences.</p><div class="tag-row"><span>discord.js</span><span>Automation</span></div></article>
-        <article class="service-card"><div class="service-icon">⌁</div><p class="card-index">02</p><h3>Websites</h3><p>Responsive websites with clean layouts, thoughtful details and mobile-friendly design.</p><div class="tag-row"><span>HTML</span><span>CSS</span><span>JavaScript</span></div></article>
-        <article class="service-card"><div class="service-icon">✧</div><p class="card-index">03</p><h3>Community Projects</h3><p>Digital spaces and tools that help online communities feel more organised and connected.</p><div class="tag-row"><span>Communities</span><span>Ideas</span></div></article>
+    <!-- About Section -->
+    <section id="about" class="about-section reveal">
+      <h2 class="section-title">About me</h2>
+      <p class="about-text">
+        I turn ideas into working things: music bots that never sleep, dashboards where people log in with Discord, and websites that load fast and look good on every phone.
+      </p>
+
+      <!-- Terminal Box -->
+      <div class="terminal-box">
+        <div class="terminal-dots">
+          <span></span><span></span><span></span>
+        </div>
+        <div class="terminal-body">
+          <p class="cmd"><span class="prompt">$</span> whoami</p>
+          <p class="res">fzboy</p>
+
+          <p class="cmd"><span class="prompt">$</span> role</p>
+          <p class="res">coding master · bot developer · web app builder</p>
+
+          <p class="cmd"><span class="prompt">$</span> stack</p>
+          <p class="res">html css javascript node.js discord.js lavalink</p>
+
+          <p class="cmd"><span class="prompt">$</span> bots --owned</p>
+          <p class="res">2 live</p>
+
+          <p class="cmd"><span class="prompt">$</span> status</p>
+          <p class="res">building something new...</p>
+        </div>
       </div>
     </section>
 
-    <section class="content-section section-wrap" id="work">
-      <div class="section-heading"><p class="eyebrow">03 / SELECTED WORK</p><h2>Things in <span class="gold">progress.</span></h2><p class="section-note">A small showcase area you can update with your real projects.</p></div>
-      <div class="project-grid">
-        <article class="project-card project-feature"><div class="project-top"><span class="project-symbol">✦</span><span class="project-status">PERSONAL PROJECT</span></div><h3>SPARK</h3><p>A Discord app project focused on bringing useful features together in one place.</p><div class="project-bottom"><span>Discord App</span><span>↗</span></div></article>
-        <article class="project-card"><div class="project-top"><span class="project-symbol">⌘</span><span class="project-status">COMMUNITY</span></div><h3>ShadowMc</h3><p>Minecraft community project with custom features and server experiences.</p><div class="project-bottom"><span>Minecraft</span><span>↗</span></div></article>
-        <article class="project-card"><div class="project-top"><span class="project-symbol">◎</span><span class="project-status">WEB</span></div><h3>SparkCore</h3><p>Bot and technology project exploring tools for Discord communities.</p><div class="project-bottom"><span>Web & Bots</span><span>↗</span></div></article>
+    <!-- Bot OwnZ Section -->
+    <section id="bots" class="bots-section reveal">
+      <h2 class="section-title icon-title"><span class="star-icon">୨୧</span> Bot OwnZ</h2>
+      <p class="section-subtitle">The bots I own and run. Tap one to open it.</p>
+
+      <div class="bot-cards">
+        <!-- SparkCore Card -->
+        <a href="https://discord.com/oauth2/authorize?client_id=1539868740768763975&permissions=8&integration_type=0&scope=bot" target="_blank" rel="noopener noreferrer" class="bot-card">
+          <span class="bot-num">Bot OwnZ 1</span>
+          <h3 class="bot-name">SparkCore</h3>
+          <p class="bot-desc">Multi-featured core management bot, high-performance systems, moderation, and Discord automation.</p>
+          <span class="bot-link">discord.com/oauth2/authorize ↗</span>
+        </a>
+
+        <!-- Spark Card -->
+        <a href="https://discord.com/oauth2/authorize?client_id=1531250518037631027&permissions=8&integration_type=0&scope=bot" target="_blank" rel="noopener noreferrer" class="bot-card">
+          <span class="bot-num">Bot OwnZ 2</span>
+          <h3 class="bot-name">Spark</h3>
+          <p class="bot-desc">Advanced Discord utility bot with entertainment, custom systems, and interactive tools.</p>
+          <span class="bot-link">discord.com/oauth2/authorize ↗</span>
+        </a>
       </div>
-      <p class="edit-note">Project details are editable in <code>index.html</code> — replace these cards with your latest work.</p>
     </section>
 
-    <section class="content-section section-wrap" id="gallery">
-      <div class="section-heading"><p class="eyebrow">04 / A VISUAL SIGNATURE</p><h2>One little <span class="gold">corner.</span></h2></div>
-      <button class="gallery-shot" id="galleryOpen" aria-label="Open profile artwork"><img src="img/profile.png" alt="FZ BOY artwork"><span class="gallery-caption">FZ BOY <small>tap to view artwork ↗</small></span></button>
+    <!-- What I Build Section -->
+    <section id="work" class="build-section reveal">
+      <h2 class="section-title">What I build</h2>
+
+      <div class="build-list">
+        <div class="build-item">
+          <h3>Discord bots</h3>
+          <p>Commands, slash commands, buttons, modals, databases.</p>
+        </div>
+        <div class="build-item">
+          <h3>Music systems</h3>
+          <p>Lavalink, filters, 24/7 mode, playlists and autoplay.</p>
+        </div>
+        <div class="build-item">
+          <h3>Web apps</h3>
+          <p>Discord login, dashboards, redeem codes, serverless APIs.</p>
+        </div>
+        <div class="build-item">
+          <h3>Websites</h3>
+          <p>Fast, responsive pages deployed on Vercel and Netlify.</p>
+        </div>
+        <div class="build-item">
+          <h3>Security tools</h3>
+          <p>Anti-nuke, audit-log guards, permission checks.</p>
+        </div>
+        <div class="build-item">
+          <h3>HTML mastery</h3>
+          <p>Semantic markup, accessibility, SEO and clean CSS.</p>
+        </div>
+      </div>
     </section>
 
-    <section class="contact-section section-wrap" id="contact">
-      <p class="eyebrow">05 / HAVE AN IDEA?</p><h2>Let's make something<br><span class="gold">worth clicking.</span></h2>
-      <p class="contact-copy">Got a project, a question, or just want to connect? Find me on Discord or send an email.</p>
-      <div class="contact-actions">
-        <a class="button button-primary" href="https://discord.gg/62xxMq2NKv" target="_blank" rel="noopener noreferrer">Join my Discord <span>↗</span></a>
-        <a class="button button-ghost" href="mailto:fzboy2008@gmail.com">fzboy2008@gmail.com <span>↗</span></a>
+    <!-- Tools I Use Section -->
+    <section class="tools-section reveal">
+      <h2 class="section-title">Tools I use</h2>
+      <div class="tools-badges">
+        <span class="badge">HTML5</span>
+        <span class="badge">CSS3</span>
+        <span class="badge">JavaScript</span>
+        <span class="badge">Node.js</span>
+        <span class="badge">discord.js</span>
+        <span class="badge">Lavalink</span>
+        <span class="badge">REST APIs</span>
+        <span class="badge">OAuth2</span>
+        <span class="badge">Vercel</span>
+        <span class="badge">Netlify</span>
+        <span class="badge">Git</span>
       </div>
-      <div class="contact-line"><span class="pulse"></span> OPEN TO IDEAS & COLLABORATIONS</div>
     </section>
+
+    <!-- Moments Section -->
+    <section class="moments-section reveal">
+      <h2 class="section-title">Moments</h2>
+      <p class="section-subtitle">Tap a photo to open it bigger.</p>
+      <div class="moments-gallery" id="gallery">
+        <div class="moment-thumb shot" data-src="img/avatar.png" data-alt="FZBOY Avatar">
+          <img src="img/avatar.png" alt="FZBOY Avatar Preview">
+        </div>
+      </div>
+    </section>
+
+    <!-- Let's talk / Footer Section -->
+    <section class="talk-section reveal">
+      <h2 class="section-title">Let's talk</h2>
+      <p class="talk-desc">Want a bot, a dashboard or a website? Join my server and message me.</p>
+      
+      <div class="talk-buttons">
+        <a href="https://discord.gg/62xxMq2NKv" target="_blank" rel="noopener noreferrer" class="btn btn-primary">Join my Discord</a>
+        <a href="https://discord.com/oauth2/authorize?client_id=1539868740768763975&permissions=8&integration_type=0&scope=bot" target="_blank" rel="noopener noreferrer" class="btn btn-secondary">SparkCore bot</a>
+        <a href="https://discord.com/oauth2/authorize?client_id=1531250518037631027&permissions=8&integration_type=0&scope=bot" target="_blank" rel="noopener noreferrer" class="btn btn-secondary">Spark bot</a>
+      </div>
+
+      <footer class="footer-bottom">
+        <span class="credits">FZBOY Dev ᯓ★</span>
+        <span class="copy">© 2026 FZBOY</span>
+      </footer>
+    </section>
+
   </main>
 
-  <footer class="footer section-wrap"><a class="brand" href="#home"><span class="brand-mark">✦</span> FZ<span>BOY</span></a><p>Designed with curiosity. Built with code.</p><a href="#home" class="back-top">BACK TO TOP ↑</a><small>© <span id="year"></span> FZ BOY</small></footer>
+  <!-- Lightbox Modal -->
+  <div id="lb" class="lightbox">
+    <span id="lbx" class="lb-close">&times;</span>
+    <img id="lbi" class="lb-content" alt="">
+  </div>
 
-  <div class="lightbox" id="lightbox" aria-hidden="true"><button id="lightboxClose" aria-label="Close image">×</button><img src="img/profile.png" alt="FZ BOY artwork enlarged"></div>
   <script src="main.js"></script>
 </body>
 </html>
